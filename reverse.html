@@ -1,0 +1,32 @@
+//To find the Reverse of a given number
+<html>
+<head>
+<title>JavaScript program to find the Reverse of a given number</title>
+</head>
+<body>
+<table>
+<tr>
+<td> <input type="text" name="a" id="first" placeholder="Enter a number"> </td>
+</tr>
+<tr>
+<td> <button onclick="reverse ()" >Submit</button> </td>
+</tr>
+</table>
+<div id = "num"></div>
+</body>
+
+<script type="text/javascript">
+function reverse()
+{
+var a,n,r = 0;
+n = parseInt(document.getElementById ("first").value);
+while(n > 0)
+{
+a = n%10;
+n = parseInt(n/10);
+r = r*10+a;
+}
+document.getElementById ("num").innerHTML ="Reverse of a given number is : "+r;
+}
+</script>
+</html>
